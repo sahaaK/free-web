@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>first responsive web design</title>
+</head>
+<body>
+    <div class="con">
+        <div class="nav">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">game controllers</a></li>
+                    <li><a href="#">VR accessories</a></li>
+                    <li><a href="#">media controls</a></li>
+                    <li><a href="#">others</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu" onclick="togglemenu()">
+            
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br> Dualshick 4</h2>
+                <h3>Wireless controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now <img src="images/arrow.png"> </button>
+            </div>
+            <div class="col-2">
+                <img src="images/controller.png" class="cont">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/add.png">
+                    <p><small>Add to cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="soc-link">
+            <a href="https://www.facebook.com/hazpa.mohamed"><img src="images/fb.png"></a>
+            <a href="https://twitter.com/home"><img src="images/tw.png" alt=""></a>
+            <a href="https://www.instagram.com/hayzam_poi"><img src="images/ig.png"></a>
+        </div>
+    </div>
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px"
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "190px"
+            }else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
